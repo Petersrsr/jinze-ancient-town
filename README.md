@@ -11,8 +11,9 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)](https://web.dev/responsive-web-design-basics/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github)](https://github.com/Petersrsr/jinze-ancient-town)
 
-[在线演示](#) | [特性介绍](#-特性) | [快速开始](#-快速开始)
+[在线演示](https://jinze.petersr.xyz) | [特性介绍](#-特性) | [快速开始](#-快速开始) | [GitHub 仓库](https://github.com/Petersrsr/jinze-ancient-town)
 
 </div>
 
@@ -98,13 +99,15 @@
 
 ### 在线预览
 
-直接使用浏览器打开 `index.html` 文件即可预览。
+🌐 **在线演示地址**：[https://jinze.petersr.xyz](https://jinze.petersr.xyz)
+
+或者直接使用浏览器打开 `index.html` 文件即可本地预览。
 
 ### 本地运行
 
 ```bash
 # 克隆项目
-git clone https://github.com/你的用户名/jinze-ancient-town.git
+git clone https://github.com/Petersrsr/jinze-ancient-town.git
 
 # 进入项目目录
 cd jinze-ancient-town
@@ -217,12 +220,13 @@ npx http-server -p 8000
 
 ## 👤 作者信息
 
-**朱伟杰**
+**朱伟杰 (Petersr)**
 
-- 学号：212240148
-- 学院：上海东海职业技术学院 信息工程学院
-- 邮箱：[Petersrsr@outlook.com](mailto:Petersrsr@outlook.com)
-- 抖音：[@Petersr](https://www.douyin.com/user/MS4wLjABAAAARfG_9xL9WdIdnGZRyix9I02cZovNJmKY-_o_K9H1ldI?from_tab_name=main)
+- 🎓 学号：212240148
+- 🏫 学院：上海东海职业技术学院 信息工程学院
+- 📧 邮箱：[Petersrsr@outlook.com](mailto:Petersrsr@outlook.com)
+- 🌐 个人网站：[petersr.xyz](https://petersr.xyz)
+- 💻 GitHub：[@Petersrsr](https://github.com/Petersrsr)
 
 ---
 
@@ -243,6 +247,8 @@ npx http-server -p 8000
 - ✅ 实现完整的响应式设计
 - ✅ 添加汉堡菜单和平滑滚动
 - ✅ 优化代码注释和文档
+- 🌐 部署到 [jinze.petersr.xyz](https://jinze.petersr.xyz)
+- 📦 开源到 [GitHub](https://github.com/Petersrsr/jinze-ancient-town)
 
 ---
 
@@ -250,7 +256,13 @@ npx http-server -p 8000
 
 **如果这个项目对你有帮助，请给一个 ⭐️ Star 支持一下！**
 
-Made with ❤️ by Petersr
+[⭐ Star on GitHub](https://github.com/Petersrsr/jinze-ancient-town) | [🌐 在线演示](https://jinze.petersr.xyz) | [📧 联系作者](mailto:Petersrsr@outlook.com)
+
+Made with ❤️ by [Petersr](https://github.com/Petersrsr)
+
+---
+
+© 2025 朱伟杰. All Rights Reserved.
 
 </div>
 
