@@ -220,10 +220,9 @@ npx http-server -p 8000
 
 ## 👤 作者信息
 
-**朱伟杰 (Petersr)**
+**Peter**
 
-- 🎓 学号：212240148
-- 🏫 学院：上海东海职业技术学院 信息工程学院
+- 🏫 学院： 信息工程学院
 - 📧 邮箱：[Petersrsr@outlook.com](mailto:Petersrsr@outlook.com)
 - 🌐 个人网站：[petersr.xyz](https://petersr.xyz)
 - 💻 GitHub：[@Petersrsr](https://github.com/Petersrsr)
