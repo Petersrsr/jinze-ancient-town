@@ -1,0 +1,207 @@
+/* 古桥详情页样式 */
+
+/* 页面标题区 */
+.page-hero {
+    margin-top: 80px;
+    padding: 60px 0 40px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #4A6FA5 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.breadcrumb {
+    display: inline-block;
+    color: var(--white);
+    padding: 8px 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.breadcrumb:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-color: var(--white);
+}
+
+/* 详情内容区 */
+.bridge-detail {
+    padding: 60px 0;
+    background-color: var(--bg-light);
+}
+
+.detail-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* 图片样式 */
+.bridge-image {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.bridge-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* 文本块 */
+.text-block {
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.text-block h3 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 15px;
+}
+
+.text-block p {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 2em; /* 首行缩进 */
+}
+
+/* 高亮内容框 */
+.highlight-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--secondary-color);
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 5px;
+}
+
+.highlight-box h3 {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.author-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+/* 信息卡片 */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 50px 0 40px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #4A6FA5 100%);
+    color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,51,102,0.3);
+}
+
+.info-card h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    text-indent: 0; /* 移除缩进 */
+    margin: 0;
+}
+
+/* 返回按钮 */
+.back-button-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-back {
+    background-color: var(--primary-color);
+}
+
+.btn-back:hover {
+    background-color: #002147;
+}
+
+/* 响应式 - 平板 */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .detail-content {
+        padding: 30px 20px;
+    }
+    
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .text-block h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 响应式 - 手机 */
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .detail-content {
+        padding: 20px 15px;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .text-block p {
+        text-indent: 0; /* 移动端取消缩进 */
+    }
+}
+
