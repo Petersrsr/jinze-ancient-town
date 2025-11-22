@@ -125,7 +125,7 @@ header {
 .hero {
     margin-top: 80px; /* 顶部导航高度 */
     height: 600px;
-    background-image: linear-gradient(rgba(0,51,102,0.5), rgba(0,51,102,0.3)), url('../images/fengmian.jpeg');
+    background-image: linear-gradient(rgba(0,51,102,0.5), rgba(0,51,102,0.3)), url('../images/fengmian.png');
     background-size: cover;
     background-position: center;
     display: flex;
