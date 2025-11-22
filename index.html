@@ -10,6 +10,8 @@
     <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
     <!-- 引入 CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- 高德地图 JS API -->
+    <script src="https://webapi.amap.com/maps?v=2.0&key=e1d97dde0d7b91be599fe8df260316e6"></script>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -23,6 +25,7 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">首页</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">古镇概览</a></li>
+                <li class="nav-item"><a href="#location" class="nav-link">地理位置</a></li>
                 <li class="nav-item"><a href="#bridges" class="nav-link">古桥遗韵</a></li>
                 <li class="nav-item"><a href="#culture" class="nav-link">民俗文化</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">联系我们</a></li>
@@ -62,6 +65,52 @@
                         <p>金泽镇位于上海市青浦区西南部，是江、浙、沪三省市交界之处。金泽镇历史悠久，早在公元960年前（宋初）已建镇，有“兴于宋、盛于元”之说。</p>
                         <p>这里水网密布，河道纵横，是典型的江南水乡。与其他古镇不同，金泽以“桥”闻名，古桥之多、保留之完整，在江南古镇中首屈一指，被誉为“江南第一桥乡”。</p>
                         <p>古镇内湖荡连通，树木葱郁，环境清幽。这里没有过度的商业喧嚣，更多的是一份淳朴与宁静，是体验原汁原味江南水乡生活的绝佳去处。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地理位置 -->
+        <section id="location" style="background-color: var(--white); padding: 60px 0;">
+            <div class="container">
+                <h2 class="section-title">地理位置</h2>
+                <p class="section-subtitle">江浙沪交界，淀山湖畔</p>
+                
+                <div class="location-grid">
+                    <div class="location-info">
+                        <h3>交通便利，区位优越</h3>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <strong>地理位置</strong>
+                                <p>上海市青浦区西南部，江浙沪三省市交界处</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🚗</span>
+                            <div>
+                                <strong>自驾路线</strong>
+                                <p>沪渝高速 → 金泽出口 → 约5分钟即达古镇</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🚌</span>
+                            <div>
+                                <strong>公共交通</strong>
+                                <p>地铁17号线东方绿舟站 → 转乘公交青金线</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⏰</span>
+                            <div>
+                                <strong>开放时间</strong>
+                                <p>全天开放，建议游览时间：2-3小时</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div id="amap" class="amap-box"></div>
+                        <p class="map-tip">📌 滑动地图可查看详细位置信息</p>
                     </div>
                 </div>
             </div>
@@ -208,6 +257,31 @@
 
     <!-- 引入 JavaScript -->
     <script src="js/main.js"></script>
+    
+    <!-- 高德地图初始化 -->
+    <script>
+        // 等待页面加载完成
+        window.onload = function() {
+            // 金泽镇坐标
+            var lng = 120.92219;
+            var lat = 31.03601300000004;
+            
+            // 创建地图实例，中心点定位在金泽镇
+            var map = new AMap.Map("amap", {
+                zoom: 14,
+                center: [lng, lat],
+                viewMode: '2D' // 2D视图
+            });
+            
+            // 添加比例尺控件
+            map.addControl(new AMap.Scale());
+            
+            // 添加工具条控件（缩放、平移）
+            map.addControl(new AMap.ToolBar({
+                position: 'RB'
+            }));
+        };
+    </script>
 </body>
 </html>
 
